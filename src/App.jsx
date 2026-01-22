@@ -299,7 +299,7 @@ const App = () => {
 
   const shareStory = (story, platform) => {
     const url = window.location.href;
-    const text = `${story.title} - Be The Damn Penguin`;
+    const text = `${story.title} - Be The Damn Penguin!`;
     
     const shareUrls = {
       facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
@@ -335,8 +335,8 @@ const App = () => {
       <header className="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <div>
-            <h1 className="text-2xl font-bold text-slate-800">Be The Damn Penguin</h1>
-            <p className="text-sm text-slate-600">Share your inspiring journey</p>
+            <h1 className="text-2xl font-bold text-slate-800">Be The Damn Penguin!</h1>
+            <p className="text-sm text-slate-600">The World awaits your story!</p>
           </div>
           <div className="flex gap-3">
             {currentUser ? (
@@ -383,7 +383,7 @@ const App = () => {
             Every Step Counts
           </h2>
           <p className="text-xl max-w-2xl mx-auto drop-shadow-md">
-            Just like penguins marching across Antarctica, your journey matters. 
+            Just like the famous penguin marching towards the mountains, we all have one such story!
             Share your story of determination, courage, and perseverance.
           </p>
         </div>
