@@ -373,7 +373,7 @@ const App = () => {
       <div 
         className="relative h-96 bg-cover bg-center flex items-center justify-center"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1551582045-6ec9c11d8697?w=1200)',
+          backgroundImage: 'url(https://www.reddit.com/r/pics/comments/pcb80/penguin_on_the_edge_of_infinity/)',
           backgroundPosition: 'center 40%'
         }}
       >
