@@ -22,11 +22,11 @@ const GOAL_EMOJIS = {
 };
 
 const OBSTACLES_BY_CATEGORY = {
-  money: ['Overspending', 'No Savings', 'Debt', 'Impulse Buying', 'Laziness', 'Fear', 'Poor Planning','Peer Pressure','Self Doubt','Society'],
-  house: ['Debt', 'Poor Planning', 'Overspending', 'Procrastination', 'Doubt', 'Fear','Loan','Responsibilities','No drive'],
-  love: ['Dishonesty', 'Selfishness', 'Poor Communication', 'Jealousy', 'Ego', 'Trust Issues','Fear','Self Doubt', 'Insecurity'],
-  health: ['Junk Food', 'Laziness', 'Excuses', 'Procrastination', 'Stress', 'No Sleep','Insomnia','Self Doubt','Giving Up'],
-  career: ['Procrastination', 'Fear', 'Self-Doubt', 'Distractions', 'Giving Up', 'Negativity','Anxiety','Peer Pressure'],
+  money: ['Overspending', 'No Savings', 'Debt', 'Impulse Buying', 'Laziness', 'Fear', 'Poor Planning'],
+  house: ['Debt', 'Poor Planning', 'Overspending', 'Procrastination', 'Doubt', 'Fear'],
+  love: ['Dishonesty', 'Selfishness', 'Poor Communication', 'Jealousy', 'Ego', 'Trust Issues'],
+  health: ['Junk Food', 'Laziness', 'Excuses', 'Procrastination', 'Stress', 'No Sleep'],
+  career: ['Procrastination', 'Fear', 'Self-Doubt', 'Distractions', 'Giving Up', 'Negativity'],
   education: ['Laziness', 'Distractions', 'Fear of Failure', 'No Discipline', 'Excuses'],
   business: ['Fear', 'Lack of Focus', 'Poor Planning', 'Giving Up', 'Self-Doubt', 'No Action'],
   travel: ['No Savings', 'Fear', 'Procrastination', 'Excuses', 'Doubt'],
@@ -188,7 +188,7 @@ const Game = () => {
     // Dollar sign
     ctx.fillStyle = '#92400e';
     ctx.font = 'bold 14px Arial';
-    ctx.fillText('❤️', x + 8, y + 17);
+    ctx.fillText('$', x + 8, y + 17);
   };
 
   const drawObstacle = (ctx, x, y, w, h, text) => {
@@ -321,7 +321,7 @@ const Game = () => {
 
       // Background mountains
       drawMountain(ctx, 0, 350, 120, 200, 240, 350, '#93c5fd', '#60a5fa');
-      //drawMountain(ctx, 200, 350, 350, 150, 500, 350, '#7dd3fc', '#38bdf8');
+      drawMountain(ctx, 200, 350, 350, 150, 500, 350, '#7dd3fc', '#38bdf8');
 
       // Goal mountains with emojis
       state.goalEmojis.forEach((goal, idx) => {
@@ -483,7 +483,7 @@ const Game = () => {
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8">
               <div className="text-center mb-8">
                 <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                  Be The Damn Penguin!
+                  🐧 Be The Damn Penguin!
                 </h1>
                 <p className="text-xl text-slate-600">
                   Set your goals and race toward them!
@@ -575,8 +575,8 @@ const Game = () => {
 
               <canvas
                 ref={canvasRef}
-                width={1080}
-                height={720}
+                width={500}
+                height={600}
                 className="border-4 border-slate-400 rounded-xl w-full shadow-inner"
               />
 
